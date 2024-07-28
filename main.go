@@ -74,7 +74,7 @@ func main() {
 				return c.Status(200).JSON(fiber.Map{"success": true})
 			}
 		}
-		return c.Status(404).JSON(fiber.Map{"error": "Todo not found"})
+		return c.Status(404).JSON(fiber.Map{"error": "Todo not found :("})
 	})
 
 	app.Listen(":" + PORT)
